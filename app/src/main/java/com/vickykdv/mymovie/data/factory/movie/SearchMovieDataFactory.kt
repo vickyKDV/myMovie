@@ -12,7 +12,6 @@ import javax.inject.Inject
 class SearchMovieDataFactory @Inject constructor(
     private val movieSearchDataSource: SearchMovieDataSource
 ) : DataSource.Factory<Int, DataMovie>(){
-
     lateinit var keyword: String
     lateinit var liveData: MutableLiveData<MovieState>
 

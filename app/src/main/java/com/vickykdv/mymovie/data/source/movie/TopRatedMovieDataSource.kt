@@ -13,9 +13,7 @@ import javax.inject.Singleton
 
 
 @Singleton
-class TopRatedMovieDataSource @Inject constructor(
-    private val apiService: ApiService
-) : PageKeyedDataSource<Int, DataMovie>() {
+class TopRatedMovieDataSource @Inject constructor(private val apiService: ApiService) : PageKeyedDataSource<Int, DataMovie>() {
 
     lateinit var liveData: MutableLiveData<MovieState>
     
